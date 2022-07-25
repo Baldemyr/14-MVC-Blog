@@ -11,7 +11,12 @@ const hbs = exphbs.create({ helpers });
 const session = require('express-session');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+//Had to adjust port to fix Heroku deployment
+
+//const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080
+
+app.set("port",PORT);
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
