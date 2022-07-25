@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Baldemyr/14-MVC-Blog.git"
-  },
-  "author": "Priya Ravi",
+    "url": "git+https://github.com/Baldemyr/14-MVC-Blog.git
+  }",
+  "author": "Andrew Cryer",
   "license": "ISC",
   "bugs": {
     "url": "hhttps://github.com/Baldemyr/14-MVC-Blog/issues"
