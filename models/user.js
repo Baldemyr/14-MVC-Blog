@@ -10,7 +10,7 @@ class User extends Model {
     }
 }
 
-// define table columns and configuration
+// define table columns and config
 User.init(
     {
         // define an id column
@@ -53,12 +53,12 @@ User.init(
       },
   {
       hooks: {
-        // set up beforeCreate lifecycle "hook" functionality
+        // set up beforeCreate lifecycle hook-gives access to sequalize
         async beforeCreate(newUserData) {
             newUserData.password = await bcrypt.hash(newUserData.password, 10);
             return newUserData;
         },
-          // set up beforeUpdate lifecycle "hook" functionality
+          // set up beforeUpdate lifecycle hook
         async beforeUpdate(updatedUserData) {
             updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
             return updatedUserData;

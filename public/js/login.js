@@ -1,7 +1,7 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-  // Collect values from the login form
+  // Collect user input from the login form
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
+      // If successful, redirect the browser to profile page
       document.location.replace('/profile');
     } else {
       alert(response.statusText);
