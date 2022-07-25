@@ -10,7 +10,7 @@
 
 ### Application Screenshot
 
-![10-pic2](https://user-images.githubusercontent.com/46965040/180672068-9f1d8e18-72d1-497e-8280-a195d1216919.png)
+![14tech](https://user-images.githubusercontent.com/46965040/180677255-6175ed28-a6ce-4ec9-87c3-3804bc8a0c5c.png)
   
 ### User Story
 
