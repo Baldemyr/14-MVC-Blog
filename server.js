@@ -9,7 +9,7 @@ const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ helpers });
 
 const session = require('express-session');
-
+console.log("server.js1")
 // const app = express();
 //Had to adjust port to fix Heroku deployment
 let app = express();
@@ -21,7 +21,7 @@ let PORT = process.env.PORT || 3000;
 //app.set("port",PORT);
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+console.log("server.js2")
 const sess = {
   secret: 'bigbluedog',
   cookie: {
@@ -35,7 +35,7 @@ const sess = {
     db: sequelize
   }),
 };
-
+console.log("server.js3")
 app.use(session(sess));
 
 app.use(express.json());
@@ -46,7 +46,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(routes);
-
+console.log("server.js4")
 // Connect to database and server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
