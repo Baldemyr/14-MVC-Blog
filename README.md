@@ -6,11 +6,11 @@
 
 ### Application Deployment
 
-https://mvc-tech-blog.herokuapp.com/
+
 
 ### Application Screenshot
 
-![](images/mvc-tech-blog.png)
+
   
 ### User Story
 
@@ -60,10 +60,14 @@ THEN I am automatically signed out of the site
 
 ### Installation Guidelines
 
-- Add a .env file to the root of the project
+Run the following commands
 
-```text
-DB_NAME='tech_blog_db'
-DB_USER='root'
-DB_PW='XXX'
-```
+npm i
+
+npm run seed
+
+npm start
+
+Then navigate to http://localhost:3001/
+
+Also remember its actually deloyed through Heroku
