@@ -2,7 +2,7 @@
    
 ### Description
 
-*A mysql database and CMS-style Blog built using Model View Controller (MVC) paradigm. Built using MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv*
+*This is a CMS style blogsite for techies. It includes MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv*
 
 ### Application Deployment
 
@@ -10,7 +10,7 @@
 
 ### Application Screenshot
 
-
+![10-pic2](https://user-images.githubusercontent.com/46965040/180672068-9f1d8e18-72d1-497e-8280-a195d1216919.png)
   
 ### User Story
 
