@@ -14,8 +14,9 @@ const app = express();
 //Had to adjust port to fix Heroku deployment
 
 //const PORT = process.env.PORT || 3001;
-const PORT = process.env.PORT || 8080
+const PORT = http.createServer(process.env.PORT || 3000);
 
+// const server = http.createServer(process.env.PORT || 3000);
 app.set("port",PORT);
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
