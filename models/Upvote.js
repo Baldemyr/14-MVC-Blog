@@ -1,9 +1,13 @@
 // import parts from sequelize library
+
 const { Model, DataTypes } = require('sequelize');
+
 // import database connection
+
 const sequelize = require('../config/connection');
 
 // initialize Comment model by extending off Sequelize's Model class
+
 class Upvote extends Model {}
  Upvote.init(
   {

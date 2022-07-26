@@ -3,6 +3,7 @@ const Post = require('./Post');
 const Comment = require('./Comment');
 
 //create associations between posts, users and comments
+
 User.hasMany(Post, {
     foreignKey: 'user_id'
 });
